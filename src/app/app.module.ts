@@ -9,7 +9,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecipeService } from './recipes/recipe.service';
 
 import { SharedModule } from './shared/shared.module';
-import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,6 @@ import { StoreModule } from '@ngrx/store';
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
-    StoreModule,
   ],
   providers: [ShoppingListService, RecipeService],
   bootstrap: [AppComponent]
