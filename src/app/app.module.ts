@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecipeService } from './recipes/recipe.service';
 
 import { SharedModule } from './shared/shared.module';
+import { FormsModule } from '@angular/forms';
+import { shoppingListReducer } from './shopping-list/store/shopping-list.reducer';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { SharedModule } from './shared/shared.module';
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
+    // StoreModule.forRoot({shoppingList: shoppingListReducer}),
+    FormsModule,
   ],
   providers: [ShoppingListService, RecipeService],
   bootstrap: [AppComponent]
